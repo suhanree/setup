@@ -1,0 +1,4 @@
+# some aliases.
+alias ls="ls -F"
+alias ll="ls -l"
+alias rm="rm -i"
