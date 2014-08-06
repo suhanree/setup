@@ -1,8 +1,13 @@
 #!/bin/bash
 # Simple setup.sh for configuring a linux environment (centos).
 
-# cloning setup files
-git clone https://github.com/suhanree/setup.git
+# for vim (create vim directories for temporary files)
+cd $HOME
+if [ ! -d ./.vim/ ]; then
+    mkdir .vim
+fi
+mkdir .vim/backup
+mkdir .vim/temp
 
 # copying configuration files into $HOME.
 ln -sb setup/screenrc .screenrc
