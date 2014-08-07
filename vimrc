@@ -1,6 +1,6 @@
 set backup
 set backupdir=~/.vim/backup	" change the directory for backup files into one place.
-set directory=~/.vim/tmp	" for temporary swp files.
+set directory=~/.vim/temp	" for temporary swp files.
 
 set number	" show line numbers
 set showmatch	" show matching parentheses (brackets)

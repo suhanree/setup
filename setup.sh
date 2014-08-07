@@ -1,8 +1,13 @@
 #!/bin/bash
 # Simple setup.sh for configuring a linux environment (centos).
 
-# for vim (create vim directories for temporary files)
+# change to $HOME directory.
 cd $HOME
+
+# install screen
+sudo yum -y install screen
+
+# for vim (create vim directories for temporary files)
 if [ ! -d ./.vim/ ]; then
     mkdir .vim
 fi
@@ -15,3 +20,6 @@ ln -sb setup/bash_profile .bash_profile
 ln -sb setup/bashrc .bashrc
 ln -sb setup/vimrc .vimrc
 ln -sb setup/aliases .aliases
+
+# set aliases
+. .aliases
