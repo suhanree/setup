@@ -5,7 +5,7 @@
 cd $HOME
 
 # install screen
-sudo yum -y install screen
+sudo yum install screen
 
 # for vim (create vim directories for temporary files)
 if [ ! -d ./.vim/ ]; then
