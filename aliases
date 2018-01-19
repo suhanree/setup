@@ -2,3 +2,4 @@
 alias ls="ls -F --color=auto"
 alias ll="ls -al"
 alias rm="rm -i"
+alias aws="ssh -i ~/.ssh/zipfian.pem ubuntu@ec2-54-92-216-12.compute-1.amazonaws.com"
